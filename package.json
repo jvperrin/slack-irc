@@ -40,7 +40,9 @@
     "check-env": "1.2.0",
     "commander": "2.9.0",
     "irc": "0.5.0",
+    "irc-colors": "1.2.1",
     "lodash": "^4.15.0",
+    "@slack/client": "3.5.1",
     "strip-json-comments": "2.0.1",
     "winston": "2.2.0"
   },
