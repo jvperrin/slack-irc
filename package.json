@@ -29,7 +29,8 @@
     "mocha": "mocha --compilers js:babel-core/register $(find test -name '*.test.js')",
     "mocha:watch": "npm run mocha -- --watch --reporter min",
     "coverage": "nyc --require babel-core/register _mocha -- $(find test -name '*.test.js') && nyc report --reporter=cobertura",
-    "test": "npm run lint && npm run coverage"
+    "test": "npm run lint && npm run coverage",
+    "deb": "fpm -s dir -t deb -n slack-irc -v 3.8.1-ocf1 -m 'Jason Perrin <jvperrin@ocf.berkeley.edu>' --vendor 'Martin Ek <mail@ekmartin.no>' --url 'https://github.com/jvperrin/slack-irc' --description 'Connects IRC and Slack channels by sending messages back and forth.' --license 'MIT' -d 'node-js' --exclude config.json --exclude test ."
   },
   "author": {
     "name": "Martin Ek <mail@ekmartin.no>"

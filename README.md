@@ -6,6 +6,10 @@
 ![Slack IRC](http://i.imgur.com/58H6HgO.gif)
 
 ## Installation and usage
+
+Installing to a debian package can be done by running `npm run deb`,
+which requires the [fpm package](https://github.com/jordansissel/fpm).
+
 *Note*: [node-irc](https://github.com/martynsmith/node-irc/)
 uses icu-charset-detector as an optional dependency,
 which might fail to install depending on how you've installed Node.js.
