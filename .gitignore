@@ -28,5 +28,8 @@ node_modules
 .environment
 /*.json
 
+# Debian packages
+*.deb
+
 dist/
 .nyc_output/
