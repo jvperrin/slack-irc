@@ -1,6 +1,6 @@
 {
-  "name": "slack-irc",
-  "version": "3.8.1",
+  "name": "slack-irc-ocf",
+  "version": "3.8.1-ocf1",
   "description": "Connects IRC and Slack channels by sending messages back and forth.",
   "keywords": [
     "slack",
@@ -13,13 +13,13 @@
   "bin": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ekmartin/slack-irc.git"
+    "url": "git@github.com:jvperrin/slack-irc.git"
   },
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/ekmartin/slack-irc/issues"
+    "url": "https://github.com/jvperrin/slack-irc/issues"
   },
   "scripts": {
     "start": "node dist/index.js",
@@ -30,10 +30,10 @@
     "mocha:watch": "npm run mocha -- --watch --reporter min",
     "coverage": "nyc --require babel-core/register _mocha -- $(find test -name '*.test.js') && nyc report --reporter=cobertura",
     "test": "npm run lint && npm run coverage",
-    "deb": "fpm -s dir -t deb -n slack-irc -v 3.8.1-ocf1 -m 'Jason Perrin <jvperrin@ocf.berkeley.edu>' --vendor 'Martin Ek <mail@ekmartin.no>' --url 'https://github.com/jvperrin/slack-irc' --description 'Connects IRC and Slack channels by sending messages back and forth.' --license 'MIT' -d nodejs -x .git -x config.json -x test -x *.deb ."
+    "deb": "fpm -s npm -t deb -n slack-irc -m 'Jason Perrin <jvperrin@ocf.berkeley.edu>' --vendor 'Martin Ek <mail@ekmartin.no>' --url 'https://github.com/jvperrin/slack-irc' --license 'MIT' -d nodejs ."
   },
   "author": {
-    "name": "Martin Ek <mail@ekmartin.no>"
+    "name": "Jason Perrin <jvperrin@ocf.berkeley.edu>"
   },
   "license": "MIT",
   "dependencies": {
