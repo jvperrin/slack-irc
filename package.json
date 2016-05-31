@@ -1,6 +1,6 @@
 {
   "name": "slack-irc-ocf",
-  "version": "3.8.1ocf2",
+  "version": "3.8.1ocf3",
   "description": "Connects IRC and Slack channels by sending messages back and forth.",
   "keywords": [
     "slack",
@@ -30,7 +30,7 @@
     "mocha:watch": "npm run mocha -- --watch --reporter min",
     "coverage": "nyc --require babel-core/register _mocha -- $(find test -name '*.test.js') && nyc report --reporter=cobertura",
     "test": "npm run lint && npm run coverage",
-    "deb": "fpm -s npm -t deb -n slack-irc -m 'Jason Perrin <jvperrin@ocf.berkeley.edu>' --vendor 'Martin Ek <mail@ekmartin.no>' --url 'https://github.com/jvperrin/slack-irc' --license 'MIT' -d nodejs ."
+    "deb": "fpm -s npm -t deb -n slack-irc -m 'Jason Perrin <jvperrin@ocf.berkeley.edu>' --vendor 'Martin Ek <mail@ekmartin.no>' --url 'https://github.com/jvperrin/slack-irc' --license 'MIT' -d nodejs -v 3.8.1ocf3 slack-irc-ocf"
   },
   "author": {
     "name": "Jason Perrin <jvperrin@ocf.berkeley.edu>"
